@@ -1,0 +1,13 @@
+.layout{
+  height: 100%;
+  width: 720px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+}
