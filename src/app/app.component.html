@@ -29,6 +29,9 @@
       <th>
         Wynik
       </th>
+      <th>
+        Ilość rzutów
+      </th>
     </thead>
     <tbody>
       <tr *ngFor="let data of results">
@@ -47,6 +50,9 @@
         </td>
         <td >
           {{ data.totalPoints }}
+        </td>
+        <td >
+          {{ data.bustIn }}
         </td>
       </tr>
     </tbody>
