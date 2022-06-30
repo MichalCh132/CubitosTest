@@ -27,7 +27,8 @@ export class AppComponent implements OnInit {
       diploDuploTotal: this.diploDuploDicesAmount,
       dogsActive: 0,
       diploDuploActive: 0,
-      totalPoints: 0
+      totalPoints: 0,
+      bustIn: 0
     }
   }
 
@@ -49,6 +50,7 @@ export class AppComponent implements OnInit {
       this.currentRollDD = this.diploDuploDicesAmount;
       this.currentRollDogs = this.dogDicesAmount;
     }
+    this.currentResult.bustIn++;
     let success: boolean = false;
     for(let i = 0; i < this.currentRollDogs; i++){
       if((this.getRandomInt(6) + 1) >= 4){
@@ -94,4 +96,5 @@ export interface Result {
   dogsTotal: number;
   dogsActive: number;
   totalPoints: number;
+  bustIn: number;
 }
